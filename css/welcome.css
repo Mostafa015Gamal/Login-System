@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, #060611, #202258);
+  padding: 0;
+  margin: 0;
+}
+.bg-body-tertiary {
+  background-color: transparent !important;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.navbar-collapse button {
+  border: 1px solid rgb(81, 81, 136);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 17px;
+}
+.navbar-collapse button:hover {
+  border: 1px solid rgb(56, 56, 129) !important;
+  background: rgb(28, 28, 117);
+}
+.welcome {
+  background-color: transparent;
+  box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.navbar-toggler:focus {
+  border: #0c0f53 1px solid;
+  box-shadow: 0 0 0 0;
+}
+i {
+  margin: 3px;
+}
+@media (max-width: 992px) {
+  .navbar-collapse button {
+    border: 1px solid rgb(81, 81, 136);
+    width: 100%;
+    margin-top: 15px;
+  }
+}

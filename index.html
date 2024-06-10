@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="items text-center d-flex flex-column align-items-center">
+        <h1 class="mb-4">Smart Login System</h1>
+        <input
+          id="email"
+          type="email"
+          class="w-75 px-2 py-1 text-white"
+          placeholder="Enter your email"
+        />
+        <div class="w-75 position-relative">
+          <input
+            id="password"
+            type="password"
+            class="w-100 px-2 py-1 text-white my-3 password"
+            placeholder="Enter your password"
+          />
+          <i
+            class="fa-solid fa-eye-slash position-absolute text-white-50 d-none"
+            id="icon"
+          ></i>
+        </div>
+        <p class="text-danger d-none" id="wrongPassword">
+          The password is wrong
+        </p>
+        <p class="text-danger d-none" id="wrongAll">
+          The email or password is wrong
+        </p>
+        <p class="text-danger d-none" id="start">
+          You don't have an email address. Would you like to create one?
+        </p>
+        <a id="aHref"
+          ><button class="btn py-1 mb-3 login" id="loginSignIn">
+            Login
+          </button></a
+        >
+        <p class="fw-bold m-0 text-white-50">
+          Don’t have an account? <a href="signup.html">Sign Up</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

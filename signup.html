@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="items text-center d-flex flex-column align-items-center">
+        <h1 class="mb-4">Smart Login System</h1>
+        <input
+          id="Name"
+          type="text"
+          class="w-75 px-2 py-1 text-white mb-3 Name"
+          placeholder="Enter your name"
+        />
+        <p
+          class="bg-dark text-white d-none pt-0 w-75 text-capitalize"
+          id="pName"
+        >
+          It must be three letters and no spaces in the end
+        </p>
+        <input
+          id="Email"
+          type="email"
+          class="w-75 px-2 py-1 text-white Email"
+          placeholder="Enter your email"
+        />
+        <p
+          class="bg-dark text-white d-none mt-3 pt-0 w-75 text-capitalize"
+          id="pEmail"
+        >
+          The email address must be valid
+        </p>
+        <div class="w-75 position-relative">
+          <input
+            id="Password"
+            type="password"
+            class="w-100 px-2 py-1 text-white my-3 Password"
+            placeholder="Enter password"
+          />
+          <p
+            class="bg-dark text-white d-none pt-0 w-100 text-capitalize"
+            id="pPassword"
+          >
+            The password must contain numbers, letters, and symbols
+          </p>
+          <i
+            class="fa-solid fa-eye-slash position-absolute text-white-50 d-none"
+            id="icon"
+          ></i>
+        </div>
+        <p class="text-success text-center d-none" id="btnSuccess">Success</p>
+        <button class="btn py-1 mb-3 login" id="loginSignUp">Login</button>
+        <p class="fw-bold m-0 text-white-50">
+          You have an account? <a href="index.html">Sign in</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/signup.js"></script>
+  </body>
+</html>
